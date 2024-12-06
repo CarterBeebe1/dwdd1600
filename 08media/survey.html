@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title id="#about">Dynamic Displays: Home</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Dynamic Display Company and Products">
+        <meta name="author" content="Carter Beebe">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="display.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    </head>
+    <body>
+        <!-- Start of the page header -->
+        <header>
+            <img src="images/logo.png" alt="site logo" width="100" height="58">
+            <div>
+                <h1>Dynamic Displays</h1>
+                <p>Color Accurate and High Resolution</p>
+            </div>
+        </header>
+
+        <!-- Start of the page navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="survey.html">Survey</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Start of the page content -->
+        <main>
+        <h1>Survey</h1>
+        
+        <form method="get" class="myForm" action="thanks.html">
+        
+        <fieldset>
+        <legend>Customer Information</legend>
+        <label>First Name*<input type="text" name="fname" required></label>
+        <label>First Last*<input type="text" name="lname" required></label>
+        <label>Email*<input type="email" name="email" required></label>
+        <label>Cell Number<input type="tel" name="phone" placeholder="987-555-1234"></label>
+        </fieldset>
+        
+        <fieldset>
+        <legend>Monitor Category</legend>
+            <label><input type="radio" name="method" value="gaming">Gaming</label>
+            <label><input type="radio" name="method" value="business">Business</label>
+            <label><input type="radio" name="method" value="professional">Professional</label>
+            <label><input type="radio" name="method" value="general">General</label>
+        </fieldset>
+        
+        <fieldset>
+        <legend>Display Types</legend>
+            <label><input type="checkbox" name="ips" value="chosen">IPS</label>
+            <label><input type="checkbox" name="tn" value="chosen">TN</label>
+            <label><input type="checkbox" name="va" value="chosen">VA</label>
+            <label><input type="checkbox" name="oled" value="chosen">OLED</label>
+                
+            <label>Desired Refresh Rate
+            <select name="RefreshRates">
+            <option value="none">Please Select</option>
+            <option value="60">60Hz</option>
+            <option value="75">75Hz</option>
+            <option value="120">120hz</option>
+            <option value="240">240hz</option>
+            </select>
+            </label>
+        </fieldset>
+            
+        <label>Comments
+            <textarea name="comments"></textarea>
+        </label>
+        
+        <input type="submit" value="Submit Survey">
+        </form>
+        
+        
+        </main>
+
+        <!-- Start of the page footer -->
+        <footer>
+        <p>&copy; 2024 &bull; Carter Beebe &bull; <a href="mailto:carterlbeebe@gmail.com">Email Us</a></p>
+        </footer>
+    </body>
+</html>
